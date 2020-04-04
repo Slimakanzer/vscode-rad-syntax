@@ -1,0 +1,25 @@
+{
+    "name": "vsrad-syntax",
+    "displayName": "vsrad-syntax",
+    "description": "Radeon Assembler Syntax Highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "radeonasm",
+            "aliases": ["Radeon-asm", "Radeonasm", "radeon-asm", "radeonasm"],
+            "extensions": [".s",".inc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "radeonasm",
+            "scopeName": "source.s",
+            "path": "./syntaxes/radeonasm.tmLanguage.json"
+        }]
+    }
+}
