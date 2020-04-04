@@ -1,4 +1,8 @@
 {
+    "comments": {
+        "lineComment": "//",
+        "blockComment": ["/*", "*/"]
+    },
     // symbols used as brackets
     "brackets": [
         ["[", "]"],
@@ -15,5 +19,11 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""]
-    ]
+    ],
+    "folding": {
+        "markers": {
+          "start": "^\\s*.(amd_amdgpu_hsa_metadata|amd_kernel_code_t|macro|if)\\b",
+          "end": "^\\s*.(end_amd_amdgpu_hsa_metadata|end_amd_kernel_code_t|endm|end)\\b"
+        }
+    },
 }
